@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1>Cart of {{ current_user.first_name }}</h1>
+    <div class="content-section">
+      {% if flag ==0 %}
+        <legend class="border-bottom mb-4">Borrowed Books</legend>
+    {% for post in posts %}
+
+        <article class="media content-section">
+            <img class="rounded-circle article-img" src="{{ url_for('static',filename='book_pics/'+post.image_file)}}" >
+            <div class="media-body">
+
+              <div class="article-metadata">
+
+                <h5><a class="mr-2" href="{{ url_for('users.bookSingle',book_id=post.id,flag='user') }}">{{ post.book_name }}</a></h5>
+
+                <small class="text-muted"> by {{ post.author_name }}</small>
+
+              </div>
+              <p class="article-content">in {{ post.book_dept }}</p>
+              <p class="article-content">ISBN Number : {{ post.isbn_number }}</p>
+              <p class="article-content">Copies Left : {{ post.no_of_copies }}</p>
+
+            </div>
+            
+          </article>
+    {% endfor %}
+    <center>
+      <form method="post">
+              <input autocomplete="off" type="submit" name="submit" value="Borrow" class="btn btn-outline-info">
+      </form>
+    </center>
+    {% else %}
+    <center><h3>$:Cart is Empty</h3></center>
+    {% endif %}
+</div>
+{% endblock content %}
+

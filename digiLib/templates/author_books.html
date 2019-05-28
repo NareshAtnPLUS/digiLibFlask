@@ -1,0 +1,48 @@
+{% if current_user.Account_type == 'Librarian' %}
+  {% extends "layout(librarian).html" %}  
+{% else %}
+{% extends "layout.html" %}
+
+<h1 class="mb-3">Books by {{ posts.author_name}}
+{% block content %}
+
+    <h1>Books</h1>
+    {% for post in posts.items %}
+
+        <article class="media content-section">
+            <img class="rounded-circle article-img" src="{{ url_for('static',filename='book_pics/'+post.image_file)}}" >
+            <div class="media-body">
+
+              <div class="article-metadata">
+
+                <h5><a class="mr-2" href="{{ url_for('users.bookSingle',book_id=post.id,flag='user') }}">{{ post.book_name }} &nbsp - {{post.book_dept}}</a></h5>
+
+                <small class="text-muted"> by {{ post.author_name }}</small>
+
+              </div>
+              {% if current_user.Account_type == 'User' %}
+              <p>{{ post.book_des }}</p>
+              {% endif %}
+              <div class="article-metadata">
+              <h6 class="article-content">Copies Left : {{ post.no_of_copies }}</h6></div>
+              
+                <h5 class="article-content">Book Publisher: &nbsp{{ post.book_pub }}</h5>
+            
+
+          </article>
+    {% endfor %}
+    {% for page_num in posts.iter_pages(left_edge=1,right_edge=1,left_current=1,right_current=2) %}
+      {% if page_num %}
+        {% if posts.page == page_num %}
+        <a class="btn btn-info mb-4" href="{{ url_for('users.showBooks',page=page_num) }}">{{ page_num }}</a>
+        {% else %}
+          <a class="btn btn-outline-info mb-4" href="{{ url_for('users.showBooks',page=page_num) }}">{{ page_num }}</a>
+        {% endif %}
+      {% else %}
+        ...  
+      {% endif %}
+    {% endfor %} 
+{% endblock content %}
+
+{% endif %}
+

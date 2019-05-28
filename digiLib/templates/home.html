@@ -1,0 +1,32 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+        <article class="media content-section">
+  
+
+          <div class="media-body">
+            <h1>Welcome Home!</h1>
+            <audio autoplay>
+  <source src="{{ url_for('static',filename='audios/welcome.mp3')}}" type="audio/mpeg">
+</audio>
+             <video width = "640" height="760" controls autoplay loop muted >
+    If You see this, update your browser
+    <source src="{{ url_for('static',filename='videos/team_spirit.mp4')}}" type="video/MP4">
+  </video>
+
+
+            <div class="article-metadata">
+
+ 
+            </div>
+               
+          
+          </div>
+
+        </article>
+
+
+{% endblock content %}

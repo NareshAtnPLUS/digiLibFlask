@@ -1,0 +1,39 @@
+Data Mining Conccepts bOoks
+
+Data mining is the task of extracting precious information from masses of raw data. The results of data mining could find many different uses and more and more companies are investing in this technology. Data Mining: Concepts And Techniques (The Morgan Kaufmann Series In Data Management Systems) explains all the fundamental tools and techniques involved in the process and also goes into many advanced techniques.
+
+This book not only introduces the fundamentals of data mining, it also explores new and emerging tools and techniques. It explains basic data mining concepts like OLAP, concept description, data preprocessing, classification and prediction, association rules and cluster analysis. It then presents advanced data mining techniques like extracting information from varied and complex sources other than just relational databases. This includes multimedia databases, object databases, time-series databases and spatial databases. It also looks at harvesting data from varied sources on the world wide web and extracting useful information from it.
+
+Data Mining: Concepts And Techniques (The Morgan Kaufmann Series in Data Management Systems) is arranged in such way that the chapters stand as independent units. This makes it flexible as a classroom material, as instructors can choose the chapters they want and present the lessons in the order they prefer.
+
+This third revised edition of the book was brought out by Morgan Kaufmann Publishers In in 2011 in hardcover.
+
+Key Features:
+
+Numerous algorithms are presented in pseudo code that can be can be applied in real world projects.
+A number of pedagogical resources ae available for instructors in the companion website.
+
+
+Inner Engineering: A Yogi’s Guide to Joy
+
+Inner Engineering is a fascinating read, rich with Sadhguru’s insights and his teachings. If you are ready, it is a tool to help awaken your own inner intelligence, the ultimate and supreme genius that mirrors the wisdom of the cosmos’—Deepak Chopra 
+In his revolutionary new book, visionary, mystic and yogi Sadhguru distils his own experiences with spirituality and yoga and introduces the transformational concept of Inner Engineering. Developed by him over several years, this powerful practice serves to align the mind and the body with energies around and within, creating a world of limitless power and possibilities. Inner Engineering is your own software for joy and well-being.
+
+
+Emotion and Relationships
+
+Book 1: Emotion: The Juice of Life 
+
+“One can make any emotion into a creative force in one’s life.” 
+– Sadhguru
+
+It’s not just poetic license that allows us to refer to emotions as “juicy”. In a literal sense also, emotions are a chemical cocktail that course through our bodies. But while we have no problems with pleasant emotions, unpleasant emotions are the source of much angst in our lives. In Emotion: The Juice of Life, Sadhguru looks at the gamut of human emotions and how to turn them into stepping stones rather than stumbling blocks.
+
+Sadhguru is a yogi and profound mystic of our times. An absolute clarity of perception places him in a unique space in not only matters spiritual but in business, environmental and international affairs and opens a new door on all that he touches.
+
+Book 2: Relationships: Bond or Bondage
+
+“If you enhance yourself into a very beautiful state, everyone will want to hold a relationship with you.” 
+– Sadhguru
+
+Human beings constantly make and break relationships. Unfortunately, relationships can make and break human beings too. Why are relationships such a circus for most of us? What is this primal urge within us that demands a bond – physical, mental, or emotional – with another? And how do we keep this bond from turning into bondage? These are the fundamental questions that Relationships: Bond or Bondage looks at as Sadhguru shares with us the keys to forming lasting and joyful relationships, whether they are with husband or wife, family and friends, at work, or with the very existence itself.

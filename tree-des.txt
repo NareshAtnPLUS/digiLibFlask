@@ -1,0 +1,132 @@
+Tree Decribing the project MVC Structure
+
+Folder PATH listing
+Volume serial number is 6261-3878
+D:.
+│   data-description.txt
+│   run.py
+│
+├───digiLib
+│   │   __init__.py
+│   │
+│   ├───controller
+│   │   │   __init__.py
+│   │   │
+│   │   ├───librarians
+│   │   │       forms.py
+│   │   │       routes.py
+│   │   │       utils.py
+│   │   │       __init__.py
+│   │   │
+│   │   └───users
+│   │           forms.py
+│   │           routes.py
+│   │           utils.py
+│   │           __init__.py
+│   │
+│   ├───models
+│   │       models.py
+│   │       __init__.py
+│   │
+│   ├───static
+│   │   ├───audios
+│   │   │       welcome.mp3
+│   │   │       welcome{backup}.mp3
+│   │   │
+│   │   ├───book_pics
+│   │   │       4731c6ef2609a628.jpg
+│   │   │       50d54b4e709848be.jpg
+│   │   │       53a3b8facc1091d0.jpg
+│   │   │       64e92e071066b3b2.jpg
+│   │   │       d3738f0322029bc3.jpg
+│   │   │       d608f71b9a881c34.jpg
+│   │   │       defaultbook.jpg
+│   │   │       f4155f548ea8122d.jpg
+│   │   │
+│   │   ├───css
+│   │   │       bootstrap.min.css
+│   │   │       main(Lib).css
+│   │   │       main.css
+│   │   │
+│   │   ├───database
+│   │   │       digiLib.db
+│   │   │
+│   │   ├───profile_pics
+│   │   │       1bb537caf40f942e.jpg
+│   │   │       484fbc371442ff14.JPG
+│   │   │       4b6bebc8e9a04584.jpg
+│   │   │       a3d0df8449dd3714.jpg
+│   │   │       ac34f43d0663ed58.jpg
+│   │   │       bc9258b67caf25c8.jpg
+│   │   │       c4c145b425ded0b5.jpg
+│   │   │       c832c5cac1d7a602.jpg
+│   │   │       d025540e66b8267f.jpg
+│   │   │       default.jpg
+│   │   │       e5757f01312caac7.jpg
+│   │   │       f31f61a4662b4a91.jpg
+│   │   │
+│   │   └───videos
+│   │           team_spirit.mp4
+│   │
+│   └───templates
+│           about.html
+│           aboutLib.html
+│           account(Librarians).html
+│           account.html
+│           addBook.html
+│           author_books.html
+│           book.html
+│           cart.html
+│           home(Librarian).html
+│           home.html
+│           layout(librarian).html
+│           layout.html
+│           layout_for_display.html
+│           layout_for_display_user.html
+│           login.html
+│           loginLib.html
+│           MonitorBooks.html
+│           register.html
+│           registerLib.html
+│           reset_password.html
+│           reset_request.html
+│           showbooks.html
+│           updateimage.html
+│
+└───migrations
+    │   alembic.ini
+    │   env.py
+    │   README
+    │   script.py.mako
+    │
+    ├───versions
+    │   │   a7157989edde_.py
+    │   │
+    │   └───__pycache__
+    │           a7157989edde_.cpython-36.pyc
+    │
+    └───__pycache__
+            env.cpython-36.pyc
+
+
+
+Folder PATH listing
+Volume serial number is 6261-3878
+D:.
+├───digiLib
+│   ├───controller
+│   │   ├───librarians
+│   │   └───users
+│   ├───models
+│   ├───static
+│   │   ├───audios
+│   │   ├───book_pics
+│   │   ├───css
+│   │   ├───database
+│   │   ├───profile_pics
+│   │   └───videos
+│   └───templates
+└───migrations
+    ├───versions
+    │   └───__pycache__
+    └───__pycache__

@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="border-top pt-3">
+
+        <h6 class="text-muted">
+
+            Need an Account <a href="{{ url_for('users.register') }}"><button class="btn btn-outline-info" >Sign Up</button></a>
+
+             &nbsp&nbspAre You Librarian? <a href="{{ url_for('librarians.loginLib') }}"><button  class="btn btn-outline-info">Login Here</button></a>
+        </h6>
+        <!--danger Button
+        class="btn btn-danger btn-sm m-1"
+        -->
+
+    </div>
+
+    <div class="content-section">
+
+        <form method="POST" action="">
+
+            {{ form.hidden_tag() }}
+
+            <fieldset class="form-group">
+
+                <legend class="border-bottom mb-4">Reset Password</legend>
+
+                <div class="form-group">
+
+                    {{ form.email.label(class="form-control-label") }}
+
+                    {% if form.email.errors %}
+
+                        {{ form.email(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.email.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.email(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.security.label(class="form-control-label") }}
+
+
+
+                    {% if form.security.errors %}
+
+                        {{ form.security(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.security.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.security(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                
+            </fieldset>
+
+            <div class="form-group">
+
+                {{ form.submit(class="btn btn-outline-info") }}
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+    
+
+{% endblock content %}

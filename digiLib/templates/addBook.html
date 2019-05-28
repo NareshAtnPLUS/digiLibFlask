@@ -1,0 +1,392 @@
+{% extends "layout(librarian).html" %}
+
+{% block content %}
+
+    <div class="content-section">
+
+        <form method="POST" action="">
+
+            {{ form.hidden_tag() }}
+
+            <fieldset class="form-group">
+
+                <legend class="border-bottom mb-4">Register New Book Details</legend>
+
+                <div class="form-group">
+
+                    {{ form.book_name.label(class="form-control-label") }}
+
+
+
+                    {% if form.book_name.errors %}
+
+                        {{ form.book_name(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.book_name.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.book_name(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.author_name.label(class="form-control-label") }}
+
+
+
+                    {% if form.author_name.errors %}
+
+                        {{ form.author_name(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.author_name.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.author_name(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.book_dept.label(class="form-control-label") }}
+
+
+
+                    {% if form.book_dept.errors %}
+
+                        {{ form.book_dept(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.book_dept.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.book_dept(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.book_cost.label(class="form-control-label") }}
+
+
+
+                    {% if form.book_cost.errors %}
+
+                        {{ form.book_cost(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.book_cost.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.book_cost(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.book_des.label(class="form-control-label") }}
+
+
+
+                    {% if form.book_des.errors %}
+
+                        {{ form.book_des(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.book_des.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.book_des(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.year_published.label(class="form-control-label") }}
+
+
+
+                    {% if form.year_published.errors %}
+
+                        {{ form.year_published(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.year_published.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.year_published(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+                <div class="form-group">
+
+                    {{ form.book_pub.label(class="form-control-label") }}
+
+
+
+                    {% if form.book_pub.errors %}
+
+                        {{ form.book_pub(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.book_pub.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.book_pub(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.isbn_number.label(class="form-control-label") }}
+
+
+
+                    {% if form.isbn_number.errors %}
+
+                        {{ form.isbn_number(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.isbn_number.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.isbn_number(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.no_of_pages.label(class="form-control-label") }}
+
+
+
+                    {% if form.no_of_pages.errors %}
+
+                        {{ form.no_of_pages(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.no_of_pages.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.no_of_pages(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.no_of_copies.label(class="form-control-label") }}
+
+
+
+                    {% if form.no_of_copies.errors %}
+
+                        {{ form.no_of_copies(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.no_of_copies.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.no_of_copies(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.floor_no.label(class="form-control-label") }}
+
+
+
+                    {% if form.floor_no.errors %}
+
+                        {{ form.floor_no(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.floor_no.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.floor_no(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.rack_no.label(class="form-control-label") }}
+
+
+
+                    {% if form.rack_no.errors %}
+
+                        {{ form.rack_no(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.rack_no.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.rack_no(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ form.shelf_no.label(class="form-control-label") }}
+
+
+
+                    {% if form.shelf_no.errors %}
+
+                        {{ form.shelf_no(class="form-control form-control-lg is-invalid") }}
+
+                        <div class="invalid-feedback">
+
+                            {% for error in form.shelf_no.errors %}
+
+                                <span>{{ error }}</span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    {% else %}
+
+                        {{ form.shelf_no(class="form-control form-control-lg") }}
+
+                    {% endif %}
+
+                </div>
+
+            </fieldset>
+
+            <div class="form-group">
+
+                {{ form.submit(class="btn btn-outline-info") }}
+
+            </div>
+
+        </form>
+
+    </div>
+
+    
+
+{% endblock content %}

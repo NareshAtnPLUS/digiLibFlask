@@ -1,0 +1,69 @@
+{% if current_user.Account_type == 'User' %}
+  {% extends "layout_for_display_user.html" %}
+{% else %}
+  {% extends "layout_for_display.html" %}
+
+
+{% block content %}
+
+    <h1>Book Details </h1>
+    <h3>{{ post.book_dept }} </h3>
+
+        <article class="media content-section">
+            <img class="rounded-circle article-img" src="{{ url_for('static',filename='book_pics/'+post.image_file)}}">
+            <div class="media-body">
+
+              <div class="article-metadata">
+
+                <h4><strong>{{ post.book_name }}</strong></h4>
+
+              </div>
+              <h5>From the hands of {{ post.author_name }}</h5>
+
+              <div class="article-metadata">
+                <p class="article-title">{{ post.book_des }}</p>
+              </div>
+
+              <div class="article-metadata">
+                <h5 class="article-content">Book Cost: &nbsp₹.{{ post.book_cost }}</h5>
+              </div>
+              <div class="article-metadata">
+                <h5 class="article-content">ISBN Number: {{ post.isbn_number }}</h5>
+              </div>
+              <div class="article-metadata">
+                <h5 class="article-content">Year Published: {{ post.year_published }}</h5>
+              </div>
+              <div class="article-metadata">
+                <h5 class="article-content">Pages : {{ post.no_of_pages }}</h5>
+              </div>
+              <div class="article-metadata">
+                <h5 class="article-content">Books Left: {{ post.no_of_copies }}</h5>
+              </div>
+              <div class="article-metadata">
+                <h5 class="article-content">Publisher: {{ post.book_pub }}</h5>
+              </div>
+              {% if current_user.Account_type == 'User' %}
+              <form method="post">
+                <input autocomplete="off" type="submit" name="submit" value="Borrow" class="btn btn-outline-info">
+                <input autocomplete="off" type="submit" name="submit" value="Add to Cart" class="btn btn-outline-info">
+              </form>
+              {% endif %}
+
+
+            </div>
+
+          </article>
+          {% if current_user.Account_type == 'Librarian' %}
+          <article class="media content-section">
+            <div class="media-body">
+              <div class="article-metadata">
+                {% for data in datas %}
+
+                {% endfor %}
+              </div>
+            </div>
+          </article>
+          {% endif %}
+{% endblock content %}
+
+{% endif %}
